@@ -78,7 +78,7 @@ export default function Form() {
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {Object.keys(FIELD_LABELS).map((field) => (
             <div key={field}>
               <label className="block text-sm font-medium text-gray-600 mb-1">
@@ -98,7 +98,7 @@ export default function Form() {
           ))}
         </div>
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div>
             <label className="block text-sm font-medium text-gray-600 mb-1">Sex</label>
             <select
